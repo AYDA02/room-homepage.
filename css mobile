@@ -1,0 +1,42 @@
+ .room1,.room2 {
+    display: block;
+    background: white;
+  text-align: center;
+    margin: auto;
+    transition: background-color 300ms;
+    height: auto;
+
+}
+img{
+    width: 100%;
+   height: 667px;
+  
+}
+  .room1 {
+    position: static;
+    display: block;
+  }
+  .room1 .div2 .text {
+    position: static;
+    width: 90%;
+    margin: 50px auto 10px auto;
+    transform: translate(50%, 0);
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    margin:left ;
+  }
+  .imgLeftRight img {
+      display: flex;
+     
+    }
+    .room2 .div1 {
+      width: 100%;
+      height: 100%;
+    }
+    .room2 .text {
+      padding: 0;
+      width: 90%;
+      margin: 50px auto; 
+    }
