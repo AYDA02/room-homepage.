@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Said Menu</title>
+    <link rel="stylesheet" href="menu-1.css" >
+</head>
+<body>
+    <div class="bar">
+        <div class="open-slide">
+            <a href="#" onclick="OpenSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30 ,5" stroke="#000"
+                    stroke-width="5"/>
+                    <path d="M0 ,14 30 ,14" stroke="#000"
+                    stroke-width="5"/>
+                    <path d="M0,23 30 ,23" stroke="#000"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </div>
+        <ul class="bar-div">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Shop</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> contact</a></li>
+        </ul>
+    </div>
+    <div id="side-menu" class="side-div">
+        <a href="#" class="btn-close"
+        onclick="CloseSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">contact</a>
+    </div>
+    <div id="main">
+        <h1>Responsive Said Menu</h1>
+    </div>
+    <script>
+        function OpenSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+            document.getElementById('main').style.marginLeft='250px';            
+        }
+        function CloseSlideMenu(){
+            document.getElementById('side-menu').style.width='0';
+            document.getElementById('main').style.marginLeft='0';
+        }
+    </script>
+</body>
+</html>
